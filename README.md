@@ -11,16 +11,17 @@ The commands are organized by their stage in the Software Development Life Cycle
 - **`engineer/`**: Execution tools for technical planning, TDD enforcement, UX concept generation, and documentation synchronization.
 - **`review/`**: Verification tools for security audits, logic double-checks, and generating reports for senior review.
 - **`utils/`**: Workflow utilities for conventional commits, loop-breaking, and forced explanations.
+## 🚀 Quick Installation
 
-## 🚀 Getting Started
+To install this suite into an existing project, run the following command in your project's root directory:
 
-1. **Clone/Copy**: Copy the `.gemini/commands` folder into your project's root.
-2. **Initialize**: Run the `/setup` command to scaffold your documentation structure:
-   ```bash
-   /setup
-   ```
-3. **Develop**: Use the discovery tools to define your feature, then the engineering tools to build it.
+```bash
+curl -fsSL https://raw.githubusercontent.com/ssuppe/sps_env/main/install.sh | bash
+```
 
+For more detailed instructions and a prompt to help Gemini automate the installation, see [BOOTSTRAP.md](./BOOTSTRAP.md).
+
+## 📂 Structure
 ## 🛠 Documentation Standards
 
 All commands are generalized to prioritize context from the following locations:
