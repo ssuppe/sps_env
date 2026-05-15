@@ -8,6 +8,7 @@ set -e
 REPO_URL="https://github.com/ssuppe/sps_env"
 TARGET_DIR=".gemini/commands"
 FORCE=false
+ADD_TO_IGNORE=false
 
 # --- Helper: Print Error and Exit ---
 error_exit() {
@@ -19,6 +20,7 @@ error_exit() {
 while [[ "$#" -gt 0 ]]; do
     case $1 in
         -f|--force) FORCE=true ;;
+        -i|--ignore) ADD_TO_IGNORE=true ;;
         *) error_exit "Unknown parameter: $1" ;;
     esac
     shift
@@ -59,6 +61,22 @@ mkdir -p "$TARGET_DIR"
 # Copy files while preserving directory structure
 if ! cp -r "$TEMP_DIR/.gemini/commands/"* "$TARGET_DIR/"; then
     error_exit "Failed to copy files to $TARGET_DIR."
+fi
+
+# 6. Gitignore Handling
+if [ -f ".gitignore" ]; then
+    if grep -q "$TARGET_DIR" ".gitignore"; then
+        echo "✅ $TARGET_DIR is already in .gitignore."
+    elif [ "$ADD_TO_IGNORE" = true ]; then
+        echo "" >> .gitignore
+        echo "# Gemini Personal Commands" >> .gitignore
+        echo "$TARGET_DIR" >> .gitignore
+        echo "🛡️  Added $TARGET_DIR to .gitignore."
+    else
+        echo "💡 TIP: You are in a Git repository. If this is a public project,"
+        echo "   you may want to add '$TARGET_DIR' to your .gitignore."
+        echo "   Run the script with -i or --ignore to do this automatically."
+    fi
 fi
 
 echo "✨ Installation complete!"
