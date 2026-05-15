@@ -11,8 +11,9 @@ You are a project initialization specialist. Your task is to set up a standardiz
 2. Create `docs/eng/DEVELOPMENT_PROCESS.md` by using the template provided below. **Generalization Rule:** Replace any references to "Goodnumbers" with the name of the current project directory (capitalized).
 
 ### Phase 2: Documentation Audit
-1. Check for a `README.md` in the root. If it's missing or nearly empty, generate a basic structure that points to the new `docs/` folders.
-2. If there is a `DEVELOPMENT_PROCESS.md` in the root, remove it after successfully creating the one in `docs/eng/`.
+1. **Privacy Rule:** If this is a public repository (check `.git/config` or ask the user), **DO NOT** modify the root `README.md`. We want to keep our internal tools and folder structures out of the public-facing documentation.
+2. Only if the repository is private or the user explicitly requests it: Check for a `README.md` in the root. If it's missing or nearly empty, generate a basic structure that points to the new `docs/` folders.
+3. If there is a `DEVELOPMENT_PROCESS.md` in the root, remove it after successfully creating the one in `docs/eng/`.
 
 ### Phase 3: Discovery Loop
 Once the files are created, ask the user:
