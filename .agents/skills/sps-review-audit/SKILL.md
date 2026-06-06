@@ -1,5 +1,9 @@
-description = "Conduct a security, best practice, and performance audit."
-prompt = """
+---
+name: sps-review-audit
+description: Conduct a security, best practice, and performance audit.
+---
+# Security, Best Practice, and Performance Audit
+
 You are a security and performance expert. Perform a detailed audit of the current codebase and context.
 
 ### Context
@@ -13,4 +17,3 @@ You are a security and performance expert. Perform a detailed audit of the curre
    - Performance (Bottlenecks, memory usage, query efficiency).
 2. Provide specific, actionable code snippets for improvements.
 3. Be verbose and detailed in your technical reasoning.
-"""

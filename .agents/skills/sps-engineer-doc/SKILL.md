@@ -1,5 +1,9 @@
-description = "Sync code changes back to documentation."
-prompt = """
+---
+name: sps-engineer-doc
+description: Sync code changes back to documentation.
+---
+# Sync Code Changes to Documentation
+
 Analyze the recent session history and code changes to ensure all documentation is up to date.
 
 ### Context
@@ -11,4 +15,3 @@ Analyze the recent session history and code changes to ensure all documentation 
 2. Update `README.md` if the project overview or setup has changed.
 3. Update relevant files in `docs/` to reflect the "as-built" state.
 4. Ensure the `IMPLEMENTATION_PLAN.md` (or equivalent) reflects completed tasks.
-"""

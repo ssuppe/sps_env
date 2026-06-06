@@ -6,7 +6,7 @@ set -e
 
 # --- Configuration ---
 REPO_URL="https://github.com/ssuppe/sps_env"
-TARGET_DIR=".gemini/commands"
+TARGET_DIR=".agents/skills"
 FORCE=false
 ADD_TO_IGNORE=false
 
@@ -26,7 +26,7 @@ while [[ "$#" -gt 0 ]]; do
     shift
 done
 
-echo "🔍 Starting Gemini Command Suite installation..."
+echo "🔍 Starting Antigravity CLI Skills Suite installation..."
 
 # 1. Dependency Check
 if ! command -v git >/dev/null 2>&1; then
@@ -55,11 +55,11 @@ if ! git clone --depth 1 "$REPO_URL" "$TEMP_DIR" --quiet; then
 fi
 
 # 5. Install
-echo "🚚 Installing commands to $TARGET_DIR..."
+echo "🚚 Installing skills to $TARGET_DIR..."
 mkdir -p "$TARGET_DIR"
 
 # Copy files while preserving directory structure
-if ! cp -r "$TEMP_DIR/.gemini/commands/"* "$TARGET_DIR/"; then
+if ! cp -r "$TEMP_DIR/.agents/skills/"* "$TARGET_DIR/"; then
     error_exit "Failed to copy files to $TARGET_DIR."
 fi
 
@@ -69,7 +69,7 @@ if [ -f ".gitignore" ]; then
         echo "✅ $TARGET_DIR is already in .gitignore."
     elif [ "$ADD_TO_IGNORE" = true ]; then
         echo "" >> .gitignore
-        echo "# Gemini Personal Commands" >> .gitignore
+        echo "# Antigravity CLI Skills" >> .gitignore
         echo "$TARGET_DIR" >> .gitignore
         echo "🛡️  Added $TARGET_DIR to .gitignore."
     else
@@ -80,5 +80,5 @@ if [ -f ".gitignore" ]; then
 fi
 
 echo "✨ Installation complete!"
-echo "📂 Commands available in $TARGET_DIR"
-echo "👉 RECOMMENDED: Run '/setup' to initialize your project structure."
+echo "📂 Skills available in $TARGET_DIR"
+echo "👉 RECOMMENDED: Run the 'sps-setup' skill to initialize your project structure."

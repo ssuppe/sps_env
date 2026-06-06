@@ -1,5 +1,9 @@
-description = "Initialize project structure and documentation"
-prompt = """
+---
+name: sps-setup
+description: Initialize project structure and documentation
+---
+# Setup
+
 You are a project initialization specialist. Your task is to set up a standardized documentation structure for this repository and establish the development process.
 
 ### Phase 1: Scaffolding
@@ -17,9 +21,9 @@ You are a project initialization specialist. Your task is to set up a standardiz
 
 ### Phase 3: Discovery Loop
 Once the files are created, ask the user:
-\"I have initialized the standard documentation structure and established the development process in `docs/eng/DEVELOPMENT_PROCESS.md`. 
+"I have initialized the standard documentation structure and established the development process in `docs/eng/DEVELOPMENT_PROCESS.md`. 
 
-Do you have any existing PRDs, technical notes, or specific project constraints you'd like me to import, summarize, or organize into these folders now?\"
+Do you have any existing PRDs, technical notes, or specific project constraints you'd like me to import, summarize, or organize into these folders now?"
 
 ---
 ### DEVELOPMENT_PROCESS.MD TEMPLATE
@@ -36,20 +40,20 @@ This document outlines the standardized Git workflow and development process. Ad
 - **`main`:** Official, production-ready release history. Direct commits are forbidden.
 - **`develop`:** Primary integration branch for day-to-day development. Must always compile and pass tests.
 
-### 2.2. Feature Branches
+## 2.2. Feature Branches
 All new work must be done on a dedicated feature branch created from `develop`.
 - **Naming Convention:** `type/short-description` (e.g., `feat/auth-logic`, `fix/header-styling`).
 
 ## 3. Commit Strategy: Conventional Commits
 Format: `<type>(<scope>): <subject>`
 Types: `feat`, `fix`, `test`, `refactor`, `docs`, `style`, `chore`.
-Subject: Always start with \"Phase #, Task #:\".
+Subject: Always start with "Phase #, Task #:".
 
 ## 4. The Pull Request (PR) Process
 1. **Branch:** Create feature branch from latest `develop`.
 2. **Work & Commit:** Discrete tasks only. TDD (Tests first). Small, logical commits.
 3. **Push:** Push to remote.
-4. **Open PR:** Target `develop`. Include summary, task links, and \"How to Test\" instructions.
+4. **Open PR:** Target `develop`. Include summary, task links, and "How to Test" instructions.
 
 ### 4.1. Automated Quality Gates
 Before pushing, run:
@@ -59,11 +63,10 @@ Before pushing, run:
 
 ### 4.2. Review and Merge
 - Requires approval from a teammate/lead.
-- Use **\"Squash and Merge\"**.
+- Use **"Squash and Merge"**.
 - Delete feature branch after merge.
 
 ## 5. Security Checks
 1. **Dependency Audit:** Check for high/critical vulnerabilities before merging.
 2. **Secrets:** Never commit API keys or secrets. Use `.env` files.
 ---
-"""

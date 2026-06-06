@@ -1,5 +1,9 @@
-description = "Verify logic, assumptions, and edge cases."
-prompt = """
+---
+name: sps-review-dblchk
+description: Verify logic, assumptions, and edge cases.
+---
+# Verify Logic, Assumptions, and Edge Cases
+
 Take a step back and double-check the current work for subtle errors.
 
 ### Checklist
@@ -9,4 +13,3 @@ Take a step back and double-check the current work for subtle errors.
 4. Alignment with the original PRD in `docs/pm/`.
 
 Be thorough and critical.
-"""

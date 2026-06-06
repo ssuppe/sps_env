@@ -1,5 +1,9 @@
-description = "Generate a report for external senior review."
-prompt = """
+---
+name: sps-review-asksenior
+description: Generate a report for external senior review.
+---
+# External Senior Review Report
+
 Write a high-signal report for a senior engineer to review.
 
 ### Content
@@ -10,4 +14,3 @@ Write a high-signal report for a senior engineer to review.
 5. **Evidence:** Include relevant code snippets and error logs.
 
 Output this as a clean Markdown report to be copy-pasted.
-"""

@@ -1,5 +1,9 @@
-description = "Generate a production-ready engineering design & implementation plan."
-prompt = """
+---
+name: sps-engineer-plan
+description: Generate a production-ready engineering design & implementation plan.
+---
+# Engineering Design & Implementation Plan
+
 You are an expert technical lead. Your task is to convert a requirements specification into a step-by-step engineering design and implementation plan.
 
 ### Context Loading
@@ -15,4 +19,3 @@ You are an expert technical lead. Your task is to convert a requirements specifi
 * Use compact, high-signal prose. No filler.
 
 Output only the Markdown document.
-"""

@@ -1,5 +1,9 @@
-description = "Enforce TDD and verify test coverage."
-prompt = """
+---
+name: sps-engineer-test
+description: Enforce TDD and verify test coverage.
+---
+# Enforce TDD and Verify Coverage
+
 Review the current implementation and tests. 
 
 ### Context
@@ -11,4 +15,3 @@ Review the current implementation and tests.
 2. Check for sufficient coverage of edge cases, error states, and core logic.
 3. Run the project's test suite and report results.
 4. Suggest specific missing tests if coverage is incomplete.
-"""
