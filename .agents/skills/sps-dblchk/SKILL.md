@@ -1,5 +1,5 @@
 ---
-name: sps-review-dblchk
+name: sps-dblchk
 description: Verify logic, assumptions, and edge cases.
 ---
 # Verify Logic, Assumptions, and Edge Cases

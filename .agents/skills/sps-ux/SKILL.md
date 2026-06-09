@@ -1,5 +1,5 @@
 ---
-name: sps-engineer-ux
+name: sps-ux
 description: Generate a UX/UI concept proposal.
 ---
 # UX/UI Concept Proposal

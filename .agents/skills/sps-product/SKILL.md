@@ -1,5 +1,5 @@
 ---
-name: sps-discovery-product
+name: sps-product
 description: Product Discovery (Socratic)
 ---
 # Product Discovery

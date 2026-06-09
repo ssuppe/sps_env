@@ -1,5 +1,5 @@
 ---
-name: sps-utils-draft-post
+name: sps-draft-post
 description: Draft a new blog post in the workspace's posts directory using structured user input.
 ---
 # Draft Blog Post

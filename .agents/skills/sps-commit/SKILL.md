@@ -1,5 +1,5 @@
 ---
-name: sps-utils-commit
+name: sps-commit
 description: Conventional commit workflow with doc sync.
 ---
 # Conventional Commit Workflow

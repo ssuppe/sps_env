@@ -1,5 +1,5 @@
 ---
-name: sps-engineer-plan
+name: sps-plan
 description: Generate a production-ready engineering design & implementation plan.
 ---
 # Engineering Design & Implementation Plan

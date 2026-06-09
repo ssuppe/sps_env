@@ -1,5 +1,5 @@
 ---
-name: sps-review-asksenior
+name: sps-asksenior
 description: Generate a report for external senior review.
 ---
 # External Senior Review Report

@@ -1,5 +1,5 @@
 ---
-name: sps-utils-stepback
+name: sps-stepback
 description: Analyze the bigger picture when stuck.
 ---
 # Analyze the Bigger Picture

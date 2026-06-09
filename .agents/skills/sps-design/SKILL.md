@@ -1,5 +1,5 @@
 ---
-name: sps-discovery-design
+name: sps-design
 description: UX/UI Design Discovery (Socratic)
 ---
 # UX/UI Design Discovery

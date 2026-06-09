@@ -1,5 +1,5 @@
 ---
-name: sps-utils-explain
+name: sps-explain
 description: Explain the next steps before proceeding.
 ---
 # Explain Next Steps

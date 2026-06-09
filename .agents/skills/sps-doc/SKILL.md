@@ -1,5 +1,5 @@
 ---
-name: sps-engineer-doc
+name: sps-doc
 description: Sync code changes back to documentation.
 ---
 # Sync Code Changes to Documentation

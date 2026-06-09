@@ -1,5 +1,5 @@
 ---
-name: sps-engineer-test
+name: sps-test
 description: Enforce TDD and verify test coverage.
 ---
 # Enforce TDD and Verify Coverage

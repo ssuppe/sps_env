@@ -9,10 +9,12 @@ All skills are prefixed with `sps-` to enable easy discovery and autocomplete in
 The skills are organized by their stage in the Software Development Life Cycle (SDLC):
 
 - **`sps-setup`**: Root skill to initialize a new repository with standardized `docs/` folders and a generalized development process.
-- **`sps-discovery-*`**: Socratic tools for interactive discovery of product requirements (`sps-discovery-product`), UX design (`sps-discovery-design`), and technical architecture (`sps-discovery-architecture`).
-- **`sps-engineer-*`**: Execution tools for technical planning (`sps-engineer-plan`), TDD enforcement (`sps-engineer-test`), UX concept generation (`sps-engineer-ux`), and documentation synchronization (`sps-engineer-doc`).
-- **`sps-review-*`**: Verification tools for security audits (`sps-review-audit`), logic double-checks (`sps-review-dblchk`), and generating reports for senior review (`sps-review-asksenior`).
-- **`sps-utils-*`**: Workflow utilities for conventional commits (`sps-utils-commit`), blog post drafting (`sps-utils-draft-post`), loop-breaking (`sps-utils-stepback`), and forced explanations (`sps-utils-explain`).
+- **`sps-letsgo`**: Context loader and implementation preparer.
+- **`sps-uprdux`**: Documentation synchronization helper for main/design docs.
+- **Discovery**: Socratic tools for interactive discovery of product requirements (`sps-product`), UX design (`sps-design`), and technical architecture (`sps-architecture`).
+- **Execution**: Execution tools for technical planning (`sps-plan`), TDD enforcement (`sps-test`), UX concept generation (`sps-ux`), and documentation synchronization (`sps-doc`).
+- **Verification**: Verification tools for security audits (`sps-audit`), logic double-checks (`sps-dblchk`), and generating reports for senior review (`sps-asksenior`).
+- **Workflow Utilities**: Workflow utilities for conventional commits (`sps-commit`), blog post drafting (`sps-draft-post`), loop-breaking (`sps-stepback`), and forced explanations (`sps-explain`).
 
 ## 🚀 Quick Installation
 

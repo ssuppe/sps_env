@@ -1,5 +1,5 @@
 ---
-name: sps-review-audit
+name: sps-audit
 description: Conduct a security, best practice, and performance audit.
 ---
 # Security, Best Practice, and Performance Audit

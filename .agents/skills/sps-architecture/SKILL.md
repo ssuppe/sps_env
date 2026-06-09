@@ -1,5 +1,5 @@
 ---
-name: sps-discovery-architecture
+name: sps-architecture
 description: Architecture & Technical Discovery (Socratic)
 ---
 # Architecture & Technical Discovery
